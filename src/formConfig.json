@@ -1,0 +1,36 @@
+{
+    "companies": [
+      {
+        "name": "Companhia A",
+        "fields": [
+          { "label": "NIF", "type": "number", "required": true },
+          { "label": "Telemóvel", "type": "tel", "required": true },
+          { "label": "Email", "type": "email", "required": true },
+          {
+            "label": "Lista de Departamentos",
+            "type": "select",
+            "options": ["Human Resources", "Finance", "IT"],
+            "required": true
+          }
+        ]
+    },
+    {
+        "name": "Companhia B",
+        "fields": [
+          { "label": "Nome do Cliente", "type": "text", "required": true },
+          { "label": "Email", "type": "email", "required": true },
+          { "label": "Data do Pedido", "type": "date", "required": true },
+          { "label": "Comentário", "type": "textarea" }
+        ]
+      },
+      {
+          "name": "Companhia C",
+          "fields": [
+            { "label": "Nome do Colaborador", "type": "text", "required": true },
+            { "label": "Email", "type": "email", "required": true },
+            { "label": "No de Empregado", "type": "text", "pattern": "^[a-zA-Z0-9]{7}$" }
+          ]
+      }
+    ]
+  }
+  
